@@ -1,0 +1,55 @@
+.text {
+ text-align: center;
+ margin-top: 7em;
+ letter-spacing: 2px;
+ font-size: xx-large;
+ line-height: 2em;
+
+ &-button {
+   background: none;
+   padding: 0em;
+   border-radius: 3px;
+   border: none;
+   font-family: 'Oswald', sans-serif;
+   font-size: 0.5em;
+   color: black;
+   transition: color 0.3s, font-size 0.3s;
+   
+   &:hover {
+    color: #f4a261;
+    font-size: 1em;
+   }
+ }
+
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
