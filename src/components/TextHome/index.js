@@ -15,7 +15,7 @@ const TextHome = ({ removeRoot }) => {
           onClick={handleClick}
           className="text-button"
         >
-          En cliquant ici
+          en cliquant ici
         </button>
       </p>
     </div>
