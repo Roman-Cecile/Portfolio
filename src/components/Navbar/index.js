@@ -1,17 +1,49 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './Button';
+import Button from 'src/containers/Button';
+import { NavLink } from 'react-router-dom';
 import './style.scss';
 
-const Navbar = () => (
+const Navbar = ({ navbarIsActive }) => (
   <>
-    <div className="navbar">
-      <a className="navbar-li">Accueil</a>
-      <a className="navbar-li">Photo</a>
-      <a className="navbar-li">Site</a>
-      <a className="navbar-li">Contact</a>
+    <div className={` ${navbarIsActive ? ' navbar' : 'navbar navbar-disabled'}`}>
+      <NavLink
+        exact
+        to="/"
+        className="navbar-li"
+        activeClassName="navbar-li--active"
+      >
+        Accueil
+      </NavLink>
+      <NavLink
+        exact
+        to="/project"
+        className="navbar-li"
+        activeClassName="navbar-li--active"
+
+      >
+        Projets
+      </NavLink>
+      <NavLink
+        exact
+        to="/contact"
+        className="navbar-li"
+        activeClassName="navbar-li--active"
+
+      >
+        Contact
+      </NavLink>
+      <NavLink
+        exact
+        to="/infos"
+        className="navbar-li"
+        activeClassName="navbar-li--active"
+
+      >
+        A propos
+      </NavLink>
     </div>
-      <Button />
+    <Button toggleNav={navbarIsActive} />
   </>
 );
 

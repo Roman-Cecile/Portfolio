@@ -1,19 +1,27 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  background-color: #264653;
+  background-color: #253237;
   height: 100vh;
   position: fixed;
   font-size: large;
   color: white;
+  transform: translateX(0%);
+  transition: transform .5s;
   
 
   &-li {
     margin: 1.5em 2.5em;
+
+    &--active {
+      text-decoration: underline;
+    }
+   
   }
 
+
   &-disabled {
-    margin-left: -7.5em;
+    transform: translateX(-95%);
   }
 
 }
