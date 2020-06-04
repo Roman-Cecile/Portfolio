@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 
 // == Import composant
 import Project from 'src/components/Project';
+import Contact from 'src/components/Project';
 
 
 // == Import containers
@@ -35,6 +36,9 @@ const App = ({ rootIsActive }) =>
               </Route>
               <Route exact path="/project">
                 <Project />
+              </Route>
+              <Route exact path="/contact">
+                <Contact />
               </Route>
             </Switch>
           </>
