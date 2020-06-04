@@ -1,0 +1,78 @@
+.titleProject {
+  margin-left: 2em;
+  transform: translateX(-7%);
+  transition: transform 0.8s;
+
+  &-open {
+    transform: translateX(2%);
+  }
+}
+
+.link {
+  display: block;
+}
+
+.listNbProject {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em !important;
+  
+
+  &,p {
+    cursor: pointer;
+    margin: 0em 3em;
+  }
+}
+
+.projectRails, .projectJS {
+  font-size: xx-large;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.card {
+
+  padding: 0.8em !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #e1eff5 !important;
+  margin-left: 1.5em !important;
+  color: black !important;
+  transform: translateY(0) !important;
+  transition: transform 0.2s !important;
+  
+  &-content {
+    margin: 1.5em 0em 0.5em 0em;
+  }
+
+
+  &:hover {
+    transform: translateY(-4%) !important;
+  }
+
+  &-header {
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  &-group {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em !important;
+    padding: 4em !important;
+    transform: translateX(0);
+    transition: transform 0.8s;
+    
+    &--open {
+      transform: translateX(6%);
+    }
+    
+  }
+}
+
+.text-footer {
+  margin-top: 1em !important;
+}
