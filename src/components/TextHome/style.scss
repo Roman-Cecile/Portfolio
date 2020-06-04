@@ -4,6 +4,8 @@
  letter-spacing: 2px;
  font-size: xx-large;
  line-height: 2em;
+ transform: translateX(0);
+ transition: transform 0.8s;
 
  &-button {
    background: none;
@@ -13,11 +15,15 @@
    font-family: 'Oswald', sans-serif;
    font-size: xx-large;
    color: black;
-   transition: color 0.2s, font-size 0.2s;
+   transition: color 0.1s;
    
    &:hover {
     color: #e76f51;
    }
+ }
+
+ &--open {
+  transform: translateX(7%);
  }
 
 }

@@ -5,6 +5,7 @@ import { removeRoot } from 'src/actions';
 
 const mapStateToProps = (state) => ({
   rootIsActive: state.rootIsActive,
+  navbarIsActive: state.navbarIsActive,
 });
 
 // grâce à mDTP je fourni une fonction au composant capable de dispatcher une action, émettre une intention

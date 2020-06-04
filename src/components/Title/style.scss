@@ -1,6 +1,6 @@
 .title {
   margin-left: 10em;
-  transform: translateX(-8%);
+  transform: translateX(-7%);
   transition: transform 0.8s;
   
   &-content {
@@ -13,13 +13,11 @@
   &-sub {
     font-size: 5em;
     font-weight: bold;
-    color: #e76f51;
-    display: inline;
-
+    color: #204146;
   }
 
   &-open {
-    transform: translateX(0);
+    transform: translateX(2%);
   }
 }
 

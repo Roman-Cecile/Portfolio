@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-const TextHome = ({ removeRoot }) => {
+const TextHome = ({ removeRoot, navbarIsActive }) => {
   const handleClick = () => {
     removeRoot()
   }
   return (
-    <div className="text text-focus-in">
+    <div className={`${navbarIsActive ? 'text text-focus-in text--open' : 'text text-focus-in '}`}>
       <p>
         Découvrez mes projets en ouvrant le menu à gauche de votre écran <br />
         ou amusez-vous avec les bulles <br />
