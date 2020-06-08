@@ -6,7 +6,7 @@
 
 
   &-open {
-    transform: translateX(2%);
+    transform: translateX(4%);
   }
 }
 
@@ -33,9 +33,14 @@
     }
   };
 
+ i.icon {
+    font-size: 4em !important;
+  }
+
   &-js {
-    width: 12em;
+    width: 6em;
     height: auto;
+    margin: 3em;
 
     &:hover {
       transform: translateY(-5%);
@@ -48,11 +53,11 @@
   padding: 0.8em !important;
   // border-radius: 10px !important;
   border-bottom: 2px solid #2e4561 !important;
-  box-shadow: 0px 0px 17px 1px #c9c9c9!important;
-  background-color: #ffffff !important;
+  box-shadow: 0px 0px 10px 1px #141414!important;
+  background-color: #bfe2ff !important;
   margin-left: 1.5em !important;
   color: black !important;
-  transform: translateY(0) !important;
+  transform: translateY(10%) !important;
   transition: transform 0.2s !important;
   font-family: 'Quicksand', sans-serif;
 

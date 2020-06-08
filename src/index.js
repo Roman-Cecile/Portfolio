@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import store from 'src/store';
 import { BrowserRouter } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
+import 'animate.css/animate.min.css';
+
 
 
 // == Import : local

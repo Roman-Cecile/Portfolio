@@ -26,21 +26,21 @@ const Navbar = ({ navbarIsActive }) => (
       </NavLink>
       <NavLink
         exact
+        to="/information"
+        className="navbar-li"
+        activeClassName="navbar-li--active"
+
+      >
+        Qui suis-je?
+      </NavLink>
+      <NavLink
+        exact
         to="/contact"
         className="navbar-li"
         activeClassName="navbar-li--active"
 
       >
         Contact
-      </NavLink>
-      <NavLink
-        exact
-        to="/infos"
-        className="navbar-li"
-        activeClassName="navbar-li--active"
-
-      >
-        A propos
       </NavLink>
     </div>
     <Button toggleNav={navbarIsActive} />

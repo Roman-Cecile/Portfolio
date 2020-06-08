@@ -13,10 +13,10 @@ import TextHome from 'src/containers/TextHome';
 import ButtonApp from 'src/containers/ButtonApp';
 import Project from 'src/containers/Project';
 import Contact from 'src/containers/Contact';
+import Information from 'src/containers/Information';
 
 // == Import fichiers
 import data from '../../assets/tsparticles.json';
-import reactLogo from './react-logo.svg';
 import './styles.scss';
 
 
@@ -39,6 +39,9 @@ const App = ({ rootIsActive }) =>
               </Route>
               <Route exact path="/contact">
                 <Contact />
+              </Route>
+              <Route exact path="/information">
+                <Information />
               </Route>
             </Switch>
           </>

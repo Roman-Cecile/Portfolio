@@ -3,6 +3,7 @@
   font-size: xx-large;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
+  color: #3e92cc;
 }
 
 .ulContact {
@@ -16,15 +17,20 @@
 
   &,li {
     margin: 1em 0.4em !important;
+    color: #3e92cc;
+    text-shadow: 2px 2px 2px black;
+
+
   }
 
 }
 
 .linkColor {
-  color: black;
+  color: #3e92cc;
   &:hover {
     text-decoration: underline;
-    color: black;
+    color: #3e92cc;
+
 
   }
 }
@@ -34,6 +40,7 @@
   width: 200px;
   margin-top: -0.8em;
   margin-bottom: 5em;
+  color: #3e92cc;
 }
 
 .imageQR {
