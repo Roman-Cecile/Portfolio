@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import { Icon } from 'semantic-ui-react';
 import './style.scss';
 
 const Button = ({ showNavbar, toggleNav }) => {
@@ -8,7 +9,7 @@ const Button = ({ showNavbar, toggleNav }) => {
   };
   return (
     <div>
-      <button type="button" className={`${toggleNav ? 'button button-open' : 'button'}`} onClick={handleClick}>&#x27F6;</button>
+      <button type="button" className={`${toggleNav ? 'button button-open' : 'button bounce-left'}`} onClick={handleClick}><Icon name="angle right" /></button>
     </div>
   );
 };

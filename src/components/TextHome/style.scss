@@ -6,19 +6,20 @@
  line-height: 2em;
  transform: translateX(0);
  transition: transform 0.8s;
+ font-family: 'Quicksand', sans-serif;
+
 
  &-button {
    background: none;
    padding: 0em;
    border-radius: 3px;
    border: none;
-   font-family: 'Oswald', sans-serif;
+   font-family: 'Quicksand', sans-serif;
    font-size: xx-large;
-   color: black;
-   transition: color 0.1s;
+   color: #2e4561;
    
    &:hover {
-    color: #e76f51;
+     text-decoration: underline;
    }
  }
 

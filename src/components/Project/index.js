@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { numberProjectByLanguage } from 'src/selector';
 
-import { Card, Message, Icon } from 'semantic-ui-react';
+import {
+  Card, Message, Icon, Button,
+} from 'semantic-ui-react';
+import ruby from '../../assets/images/Ruby.png';
+import js from '../../assets/images/jsLogo.png';
 import './style.scss';
 
 
@@ -22,13 +26,19 @@ const Project = ({
   return (
     <div>
       <h1
-        className={`${navbarIsActive ? 'titleProject titleProject-open title-sub' : 'titleProject title-sub '}`}
+        className={`${navbarIsActive ? 'titleProject titleProject-open title-sub' : ' titleProject title-sub '}`}
       >
-        Mes projets
+        <span className="tracking-in-expand">Mes projets</span>
       </h1>
       <div className="listNbProject">
-        <p onClick={(evt) => handleClick(evt, 'Ruby')} className="projectRails">Afficher les projets Ruby on Rails</p>
-        <p onClick={(evt) => handleClick(evt, 'JavaScript')} className="projectJS">Afficher les projets Javascript</p>
+        {/* <p
+          onClick={(evt) => handleClick(evt, 'Ruby')}
+          className="projectRails"
+        >Projets Ruby on Rails */}
+        <img src={ruby} alt="Logo ruby" className="logo logo-ruby" onClick={(evt) => handleClick(evt, 'Ruby')} />
+        <img src={js} alt="Logo js" className="logo logo-js" onClick={(evt) => handleClick(evt, 'JavaScript')} />
+        {/* </p> */}
+        {/* <p onClick={(evt) => handleClick(evt, 'JavaScript')} className="projectJS">Projets Javascript</p> */}
         {/* <li>
           Autres:
           {
@@ -38,7 +48,7 @@ const Project = ({
           }
         </li> */}
       </div>
-      <Card.Group className={`${navbarIsActive ? 'card-group card-group--open' : 'card-group'}`}>
+      <Card.Group className="card-group">
         { !loading
           && repos.map(({
             id,
@@ -49,7 +59,7 @@ const Project = ({
           }) => (
             <Card
               key={id}
-              className="card"
+              className="card slide-in-right"
               href={html_url}
             >
               <Card.Header className="card-header">
