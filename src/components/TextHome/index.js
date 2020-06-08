@@ -9,7 +9,7 @@ const TextHome = ({ removeRoot, navbarIsActive }) => {
     <div className={`${navbarIsActive ? 'text text-focus-in text--open' : 'text text-focus-in '}`}>
       <p>
         Découvrez mes projets en ouvrant le menu à gauche de votre écran <br />
-        ou amusez-vous avec les bulles <br />
+        ou amusez-vous avec le fond d'écran <br />
         <button
           type="button"
           onClick={handleClick}

@@ -4,16 +4,18 @@
   transition: transform 0.8s;
   
   &-content {
+    font-family: 'Playfaire Display', serif;
     font-size: 5em;
     font-weight: bold;
-    color:  black;
+    color:  #182433;
     
   }
 
   &-sub {
+    font-family: 'Playfaire Display', serif;
     font-size: 5em;
     font-weight: bold;
-    color: #204146;
+    color: #2e4561;
   }
 
   &-open {

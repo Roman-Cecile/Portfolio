@@ -6,7 +6,7 @@ import { FETCH_REPOS, saveRepos, FETCH_CORRECT_LANGUAGE, saveCorrectLanguage } f
 const api = (store) => (next) => (action) => {
   switch (action.type) {
     case FETCH_REPOS:
-      axios.get('https://api.github.com/users/Roman974/repos')
+      axios.get('https://api.github.com/users/Roman-Cecile/repos')
         .then((response) => {
           // console.log(response.data);
           const listRepos = response.data;
@@ -17,7 +17,7 @@ const api = (store) => (next) => (action) => {
         });
       break;
     case FETCH_CORRECT_LANGUAGE:
-      axios.get('https://api.github.com/users/Roman974/repos')
+      axios.get('https://api.github.com/users/Roman-Cecile/repos')
         .then((response) => {
           // console.log(response.data);
           const listRepos = response.data;

@@ -4,7 +4,6 @@ import Particles from 'react-tsparticles';
 import { Route, Switch } from 'react-router-dom';
 
 // == Import composant
-import Contact from 'src/components/Contact';
 
 
 // == Import containers
@@ -13,6 +12,7 @@ import Title from 'src/containers/Title';
 import TextHome from 'src/containers/TextHome';
 import ButtonApp from 'src/containers/ButtonApp';
 import Project from 'src/containers/Project';
+import Contact from 'src/containers/Contact';
 
 // == Import fichiers
 import data from '../../assets/tsparticles.json';
