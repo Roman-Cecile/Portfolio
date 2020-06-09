@@ -194,4 +194,15 @@ $font-text: 'Chivo', sans-serif;
       }
     }
   }
+
+  .close {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+
+  .open {
+    transform: translateX(50%);
+    transition: transform 0.8s;
+
+  }
 }
