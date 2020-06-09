@@ -23,15 +23,18 @@ const Information = ({ navbarIsActive }) => (
       <p
         className="bio"
       >
-        Je m'appelle Roman CECILE, j'habite à Montpellier.
-        Comme vous pouvez le voir dans mon parcours (ci-dessous) j'ai obtenu obtenu une licence en droit privé à
-        l'université de Montpellier avant de découvrir l'univers du développement web. C'est au travers d'un
-        projet entrepreneurial que j'ai rapidement développé un attrait pour ce métier.
-        En effet, pour la première fois je prenais du plaisir à résoudre des problématiques,
-        apprendre, progresser.<br />
-        Je suis désormais à la recherche d'un poste de développeur front-end afin d'approfondir mes connaissances
-        ainsi que de mettre en pratiques mes acquis. Par la suite j'aimerai étudier de nouveaux frameword front
-        (Angular, Vue...) mais également d'autres langages.<br />
+        Je suis Roman CECILE, j’habite Montpellier et je suis développeur Web. <br />
+        D’abord destiné aux métiers du Droit, c’est dans ma troisième année, lors d’un projet entrepreneurial
+        mené en parallèle,  que je découvre tout l’univers fascinant du développement web.
+        A peine diplômé, je quitte mon parcours de juriste et change radicalement de
+        direction, convaincu d’avoir rencontré la profession à laquelle je me sens destiné. <br /> C’est à travers
+        différentes formations que mon intérêt pour le monde numérique se précise tandis que j’acquiers mes
+        compétences. <br /> Résoudre des problématiques, apprendre et progresser  sont mes objectifs.
+        C’est pourquoi je suis  à la recherche d’un poste de développeur front-end  qui me donnerait
+        l’occasion d’aller encore plus loin dans mes connaissances et apprentissages.
+        Des frameword front comme Angular, Vue… et d’autres langages m’attirent déjà.
+        Ils font partie des projets que je pense mettre en place dès que l’occasion se présentera.
+
 
       </p>
       <p className="titlebio">Mon parcours</p>
