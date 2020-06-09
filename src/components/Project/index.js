@@ -78,7 +78,7 @@ const Project = ({
           <Icon name="spinner" size="huge" loading />
         )}
       </Card.Group>
-      <p className="text text-footer">La liste des projets est automatiquement mise à jour grâce à l'API proposé par <strong>Github</strong><Icon name="github" /></p>
+      <p className={`${navbarIsActive ? 'text text-footer" card-group-open' : 'text text-footer'}`}>La liste des projets est automatiquement mise à jour grâce à l'API proposé par <strong>Github</strong><Icon name="github" /></p>
     </div>
   );
 };

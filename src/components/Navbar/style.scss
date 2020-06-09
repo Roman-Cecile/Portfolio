@@ -41,6 +41,8 @@
     transform: translateX(0%);
     transition: transform .5s;
     font-family: 'Playfair Display', serif;
+    height: 100%;
+    position: fixed;
 
     &-disabled {
       transform: translateX(-100%);
