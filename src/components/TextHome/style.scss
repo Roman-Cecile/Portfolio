@@ -3,10 +3,14 @@
  margin-top: 7em;
  letter-spacing: 2px;
  font-size: xx-large;
+ font-weight: bold;
  line-height: 2em;
  transform: translateX(0);
  transition: transform 0.8s;
  font-family: 'Quicksand', sans-serif;
+ color: #3e92cc;
+ text-shadow: 1px 1px 2px black;
+
 
 
  &-button {
@@ -16,10 +20,15 @@
    border: none;
    font-family: 'Quicksand', sans-serif;
    font-size: xx-large;
-   color: #2e4561;
+   color: #3e92cc;
+   font-weight: bold;
+   text-shadow: 1px 1px 2px black;
+
+
    
    &:hover {
      text-decoration: underline;
+
    }
  }
 

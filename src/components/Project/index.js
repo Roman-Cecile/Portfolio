@@ -7,7 +7,7 @@ import {
   Card, Message, Icon, Button,
 } from 'semantic-ui-react';
 import ruby from '../../assets/images/Ruby.png';
-import js from '../../assets/images/jsLogo.png';
+import js from '../../assets/images/jsproject.png';
 import './style.scss';
 
 
@@ -75,13 +75,7 @@ const Project = ({
 
           ))}
         {loading && (
-        <Message icon>
-          <Icon name="circle notched" loading />
-          <Message.Content>
-            <Message.Header>Veuillez patientez</Message.Header>
-            Nous récupérons les projets.
-          </Message.Content>
-        </Message>
+          <Icon name="spinner" size="huge" loading />
         )}
       </Card.Group>
       <p className="text text-footer">La liste des projets est automatiquement mise à jour grâce à l'API proposé par <strong>Github</strong><Icon name="github" /></p>

@@ -46,9 +46,13 @@
     "webpack-merge": "*"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "animate.css": "^4.1.0",
+    "aos": "^2.3.4",
     "axios": "^0.19.2",
     "prop-types": "*",
     "react": "*",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "*",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
