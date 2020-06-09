@@ -135,22 +135,18 @@
       "value": 0
     },
     "shape": {
-      "image":  [
+      "character":  [
       {
-        "src": "http://localhost/projetperso/portfolio/src/assets/images/react.png",
-        "width": 100, 
-        "height": 100
-      },
-      {
-        "src": "http://localhost/projetperso/portfolio/src/assets/images/node.png",
-        "width": 200, 
-        "height": 200
+        "fill": true,
+        "font": "Font Awesome 5 Brands",
+        "style": "",
+        "value": ["\uf41b", "\uf38b", "\uf3b9", "\uf13b", "\uf1cb"],
+        "weight": "400"
       }
     ],
-      "stroke": {
-        "width": 1
-      },
-      "type": ["image"]
+      "polygon": { "nb_sides": 5 },
+      "stroke": { "color": "#ffffff", "width": 1 },
+      "type": ["char"]
     },
     "size": {
       "animation": {

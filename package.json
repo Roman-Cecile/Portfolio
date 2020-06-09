@@ -46,6 +46,7 @@
     "webpack-merge": "*"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "animate.css": "^4.1.0",
     "aos": "^2.3.4",
     "axios": "^0.19.2",

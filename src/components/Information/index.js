@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ScrollAnimation from 'react-animate-on-scroll';
 import './style.scss';
-import image from '../../assets/images/react.png';
-import sti from '../../assets/images/sti.png';
-import fac from '../../assets/images/fac.png';
-import thp from '../../assets/images/thp.png';
-import oclock from '../../assets/images/oclock.png';
 
 const Information = ({ navbarIsActive }) => (
   <>
