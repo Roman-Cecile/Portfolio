@@ -34,7 +34,7 @@ const Information = ({ navbarIsActive }) => (
       (Angular, Vue...) mais également d'autres langages.<br />
 
     </p>
-    <p className="titlebio">Mon parcours d'apprentissage</p>
+    <p className="titlebio">Mon parcours</p>
     <ul className="timeline" data-aos="fade-left" data-aos-delay={10} data-aos-duration={1300}>
       <li className="event" data-date="2015">
         <h2>
