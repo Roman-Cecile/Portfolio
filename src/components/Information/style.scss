@@ -154,3 +154,44 @@ $font-text: 'Chivo', sans-serif;
     opacity: 1;
   }
 }
+
+
+@media screen and (max-width: 750px) {
+  .titlebio {
+    width: 50%;
+    margin-top: 1em;
+  }
+
+  .bio {
+    text-align: justify;
+    margin: 1em auto 2em auto;
+    width: 80%;
+    color: #3e92cc;
+    font-size: 1.4em;
+    background-color: #16324f;
+    line-height:1.5em;
+  }
+
+  .timeline { 
+    margin: 1em 6em;  
+    font-size: 1.03em;   
+    padding: 1.9em;    
+    max-width: 70%;
+    
+    .event {
+      border-bottom: 1px dashed rgb(95, 94, 94);
+      padding-bottom: 1.5em;
+      margin-bottom: 3em;  
+  
+  
+      &:before {
+        font-size: 1.5em;
+        left: -4em;  
+      }
+  
+      &:after {  
+        left: -2.4em;
+      }
+    }
+  }
+}
