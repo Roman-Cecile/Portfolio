@@ -138,3 +138,12 @@
    opacity: 1;
  }
 }
+
+
+@media screen and (max-width: 750px) {
+  .bounce-left {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+}

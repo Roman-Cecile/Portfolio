@@ -34,3 +34,17 @@
   }
 
 }
+
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    transform: translateX(0%);
+    transition: transform .5s;
+    font-family: 'Playfair Display', serif;
+
+    &-disabled {
+      transform: translateX(-100%);
+    }
+  }
+
+}

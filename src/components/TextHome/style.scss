@@ -68,3 +68,32 @@
     opacity: 1;
   }
 }
+
+
+@media screen and (max-width: 750px) {
+  .text {
+    text-align: center;
+    margin-top: 8em;
+    font-size: large;
+    padding: 0 1em !important;
+   
+   
+   
+    &-button {
+      text-align: center;
+      font-size: 1em;
+   
+   
+      
+      &:hover {
+        text-decoration: underline;
+   
+      }
+    }
+   
+    &--open {
+     transform: translateX(50%);
+    }
+   
+   }
+}
