@@ -23,7 +23,7 @@
   transition: transform 0.3s;
   cursor: pointer;
   &-ruby{
-    width: 13em;
+    width: 11.5em;
     height: auto;
     
 
@@ -88,9 +88,7 @@
     transform: translateX(0);
     transition: transform 0.8s;
     
-    &--open {
-      transform: translateX(6%);
-    }
+    
     
   }
 }
@@ -140,5 +138,40 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .titleProject {
+    margin-left: 2em;
+    transform: translateX(-15%);
+  
+  
+    &-open {
+      transform: translateX(50%);
+    }
+  }
+
+  .card {
+    padding: 1.5em !important;
+
+    &-group {
+      width: 80%
+    }
+    &-group-open {
+      transform: translateX(50%);
+    }
+  }
+
+  .logo {
+    transform: translateX(0);
+    transition: transform 0.3s;
+    &-ruby{
+      width: 12em;
+    };
+    &--open {
+      transform: translateX(80%);
+    }
+
   }
 }
