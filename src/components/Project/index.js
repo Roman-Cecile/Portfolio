@@ -35,8 +35,8 @@ const Project = ({
           onClick={(evt) => handleClick(evt, 'Ruby')}
           className="projectRails"
         >Projets Ruby on Rails */}
-        <img src={ruby} alt="Logo ruby" className="logo logo-ruby" onClick={(evt) => handleClick(evt, 'Ruby')} />
-        <img src={js} alt="Logo js" className="logo logo-js" onClick={(evt) => handleClick(evt, 'JavaScript')} />
+        <img src={ruby} alt="Logo ruby" className={`${navbarIsActive ? 'logo logo--open logo-ruby' : 'logo logo-ruby'}`} onClick={(evt) => handleClick(evt, 'Ruby')} />
+        <img src={js} alt="Logo js" className={`${navbarIsActive ? 'logo logo--open logo-js' : 'logo logo-js'}`} onClick={(evt) => handleClick(evt, 'JavaScript')} />
         {/* </p> */}
         {/* <p onClick={(evt) => handleClick(evt, 'JavaScript')} className="projectJS">Projets Javascript</p> */}
         {/* <li>
@@ -48,7 +48,7 @@ const Project = ({
           }
         </li> */}
       </div>
-      <Card.Group className="card-group">
+      <Card.Group className={`${navbarIsActive ? 'card-group card-group-open' : 'card-group'}`}>
         { !loading
           && repos.map(({
             id,
