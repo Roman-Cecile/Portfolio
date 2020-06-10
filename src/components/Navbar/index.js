@@ -4,7 +4,7 @@ import Button from 'src/containers/Button';
 import { NavLink } from 'react-router-dom';
 import './style.scss';
 
-const Navbar = ({ navbarIsActive }) => (
+const Navbar = ({ navbarIsActive, removeNavbar }) => (
   <>
     <div className={` ${navbarIsActive ? ' navbar' : 'navbar navbar-disabled'}`}>
       <NavLink
@@ -12,6 +12,7 @@ const Navbar = ({ navbarIsActive }) => (
         to="/"
         className="navbar-li"
         activeClassName="navbar-li--active"
+        onClick={removeNavbar}
       >
         Accueil
       </NavLink>
@@ -20,6 +21,7 @@ const Navbar = ({ navbarIsActive }) => (
         to="/project"
         className="navbar-li"
         activeClassName="navbar-li--active"
+        onClick={removeNavbar}
 
       >
         Projets
@@ -29,6 +31,7 @@ const Navbar = ({ navbarIsActive }) => (
         to="/information"
         className="navbar-li"
         activeClassName="navbar-li--active"
+        onClick={removeNavbar}
 
       >
         Qui suis-je?
@@ -38,6 +41,7 @@ const Navbar = ({ navbarIsActive }) => (
         to="/contact"
         className="navbar-li"
         activeClassName="navbar-li--active"
+        onClick={removeNavbar}
 
       >
         Contact
