@@ -1,21 +1,26 @@
 .titlebio {
-  margin: auto;
+  margin: 1.5em  auto;
   width: 17%;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
   font-size: 2.5em;
   text-shadow: 1px 1px 2px black;
-  color: #3e92cc;
+  color: #5A7A9C;
 }
 
 .bio {
   text-align: justify;
-  margin: 2em auto 4em auto;
-  width: 33%;
-  color: #3e92cc;
+  margin: 2em auto 6em auto;
+  width: 40%;
+  color: #5A7A9C;
   font-size: 1.5em;
   background-color: #16324f;
-  line-height:1.5em;
+  line-height:1.8em;
+
+  &-container {
+    opacity: 0.9;
+    filter: blur(-2px);
+  }
 }
 
 $background: #252827;
@@ -50,13 +55,14 @@ $font-text: 'Chivo', sans-serif;
   font-weight: 700;  
   max-width: 30%; 
   overflow-y: visible;
-  font-family: 'Quicksand', sans-serif;
   text-shadow: 1px 1px 2px black;
   background-color: #16324f;
+  opacity: 0.8;
+  filter: blur(-2px);
 
 
   h2, h3 {
-    font-family: 'Plaifair Display', serif;
+    font-family: 'Plaifair Display', serif !important;
     letter-spacing: 1.5px;
     font-weight: bolder;
     font-size: 1.4em;
@@ -76,12 +82,11 @@ $font-text: 'Chivo', sans-serif;
 
     &:before {
       left: ((($date * 0.6) + $spacing + $line + $dot + ($dotborder * 2)) * 1.5) * -1;    
-      color: #3e92cc;    
+      color: #5A7A9C;    
       content: attr(data-date);
       text-align: right;
       font-weight: 100;    
       font-size: 2em;
-      font-family: 'Quicksand', sans-serif;
     }
 
     &:before, &:after {
@@ -165,11 +170,9 @@ $font-text: 'Chivo', sans-serif;
   .bio {
     text-align: justify;
     margin: 1em auto 2em auto;
-    width: 80%;
-    color: #3e92cc;
+    width: 90%;
     font-size: 1.4em;
     background-color: #16324f;
-    line-height:1.5em;
   }
 
   .timeline { 
@@ -195,14 +198,55 @@ $font-text: 'Chivo', sans-serif;
     }
   }
 
-  .close {
+  .closeInfo {
     transform: translateX(0%);
     transition: transform 0.8s;
   }
 
-  .open {
+  .openInfo {
+    transform: translateX(21%);
+    transition: transform 0.8s;
+
+  }
+}
+
+@media screen and (max-width: 1850px) {
+  .titlebio {
+    width: 50%;
+    margin-top: 1em;
+  }
+
+  .bio {
+    text-align: justify;
+    margin: 1em auto 2em auto;
+    width: 80%;
+    font-size: 1.4em;
+    background-color: #16324f;
+  }
+
+  .closeInfo {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+
+  .openInfo {
+    transform: translateX(35%);
+    transition: transform 0.8s;
+
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  .closeInfo {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+
+  .openInfo {
     transform: translateX(50%);
     transition: transform 0.8s;
 
   }
+
 }

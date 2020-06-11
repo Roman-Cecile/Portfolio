@@ -2,8 +2,7 @@
   text-align: center;
   font-size: xx-large;
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  color: #3e92cc;
+  color: #5A7A9C;
 }
 
 .ulContact {
@@ -13,11 +12,10 @@
   // justify-content: center !important;
   font-size: 2em;
   margin-bottom: 1.4em !important;
-  font-family: 'Quicksanf', sans-serif;
 
   &,li {
     margin: 1em 0.4em !important;
-    color: #3e92cc;
+    color: #5A7A9C;
     text-shadow: 2px 2px 2px black;
 
 
@@ -26,10 +24,10 @@
 }
 
 .linkColor {
-  color: #3e92cc;
+  color: #5A7A9C;
   &:hover {
     text-decoration: underline;
-    color: #3e92cc;
+    color: #5A7A9C;
 
 
   }
@@ -40,7 +38,7 @@
   width: 200px;
   margin-top: 1em;
   margin-bottom: 5em;
-  color: #3e92cc;
+  color: #5A7A9C;
 }
 
 .imageQR {
@@ -48,14 +46,50 @@
   margin: 2em auto;
 }
 
+// @media screen and (max-width: 750px) {
+//   .close {
 
-@media screen and (max-width: 750px) {
-  .close {
+//   }
+// }
+
+
+@media screen and (max-width: 1300px) {
+  .closeContact {
     transform: translateX(0%);
     transition: transform 0.8s;
   }
-  .open {
-    transform: translateX(2%)
+  .openContact {
+    transform: translateX(5%)
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(15%)
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(25%)
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(20%)
   }
 
   .h2 {
@@ -73,4 +107,46 @@
     width: 15em;
   }
 
+}
+
+@media screen and (max-width: 650px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(30%)
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(43%)
+  }
+}
+
+
+
+@media screen and (max-width: 430px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(57%)
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .closeContact {
+    transform: translateX(0%);
+    transition: transform 0.8s;
+  }
+  .openContact {
+    transform: translateX(60%)
+  }
 }

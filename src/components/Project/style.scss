@@ -1,12 +1,12 @@
 .titleProject {
-  margin-left: 2em;
-  transform: translateX(-7%);
+  margin-left: 0.5em;
+  transform: translateX(0%);
   transition: transform 0.8s;
-  font-family: 'Playfaire Display', serif;
+  font-family: 'Playfaire Display', serif !important;
 
 
   &-open {
-    transform: translateX(4%);
+    transform: translateX(13%);
   }
 }
 
@@ -59,7 +59,6 @@
   color: black !important;
   transform: translateY(10%) !important;
   transition: transform 0.8s !important;
-  font-family: 'Quicksand', sans-serif;
 
   
   &-content {
@@ -75,7 +74,6 @@
     font-size: large;
     font-weight: bold;
     text-transform: capitalize;
-    font-family: 'Playfair Display', serif;
   }
   
   &-group {
@@ -141,14 +139,22 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1600px) {
   .titleProject {
-    margin-left: 2em;
-    transform: translateX(-15%);
+    &-open {
+      transform: translateX(11%);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .titleProject {
+    margin-left: 0.5em;
+    transform: translateX(0%);
   
   
     &-open {
-      transform: translateX(50%);
+      transform: translateX(17%);
     }
   }
 
@@ -159,7 +165,7 @@
       width: 80%
     }
     &-group-open {
-      transform: translateX(50%);
+      transform: translateX(0%);
     }
   }
 
@@ -170,8 +176,158 @@
       width: 12em;
     };
     &--open {
-      transform: translateX(80%);
+      transform: translateX(0%);
     }
 
   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .titleProject {
+    margin-left: 1em;
+    transform: translateX(0%);
+  
+  
+    &-open {
+      transform: translateX(20%);
+    }
+  }
+
+  .card {
+    padding: 1.5em !important;
+
+    &-group {
+      width: 80%
+    }
+    &-group-open {
+      transform: translateX(12%);
+    }
+  }
+
+  .logo {
+    transform: translateX(0);
+    transition: transform 0.3s;
+    &-ruby{
+      width: 12em;
+    };
+    &--open {
+      transform: translateX(11%);
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    &-group-open {
+      transform: translateX(20%);
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .titleProject {
+    margin-left: 0.5em;
+    transform: translateX(0);
+  
+  
+    &-open {
+      transform: translateX(22%);
+    }
+  }
+
+  .card {
+    padding: 1.5em !important;
+
+    &-group {
+      width: 80%
+    }
+    &-group-open {
+      transform: translateX(20%);
+    }
+  }
+
+  .logo {
+    transform: translateX(0);
+    transition: transform 0.3s;
+    &-ruby{
+      width: 12em;
+    };
+    &--open {
+      transform: translateX(15%);
+    }
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .titleProject {
+    margin-left: 0.5em;
+    transform: translateX(0);
+  
+  
+    &-open {
+      transform: translateX(29%);
+    }
+  }
+
+  .card {
+    &-group-open {
+      transform: translateX(11%);
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .titleProject {
+    margin-left: 0.5em;
+    transform: translateX(0);
+  
+  
+    &-open {
+      transform: translateX(34%);
+    }
+  }
+  .card {
+    &-group-open {
+      transform: translateX(26%);
+    }
+  }
+
+  .logo {
+    &--open {
+      transform: translateX(20%);
+    }
+  } 
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .titleProject {
+    margin-left: 0.5em;
+    transform: translateX(0);
+  
+  
+    &-open {
+      transform: translateX(45%);
+    }
+  }
+  .card {
+    &-group-open {
+      transform: translateX(70%);
+    }
+  }
+
+  .logo {
+    &--open {
+      transform: translateX(55%);
+    }
+  } 
+
 }

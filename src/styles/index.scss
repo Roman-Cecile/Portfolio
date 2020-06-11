@@ -6,6 +6,7 @@ body {
   padding: 0;
   height: 0% !important;
   background-color: #16324f !important;
+  font: unset;
 }
 
 .particles {
@@ -20,8 +21,6 @@ body {
 @font-face {
   font-family: 'Playfair Display';
   src: url('../assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
-  font-family: 'Quicksand';
-  src: url('../assets/fonts/Quicksand-VariableFont_wght.ttf');
 }
 
 /* 

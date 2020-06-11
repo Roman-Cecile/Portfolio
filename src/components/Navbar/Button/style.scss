@@ -8,6 +8,7 @@
   transform: translateX(20%);
   margin-left: -0.5em;
   transition: transform 1.5s;
+  color: white;
   
   &-open {
   transform: translateX(200%) rotateY(0.5turn);

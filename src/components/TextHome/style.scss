@@ -7,8 +7,7 @@
  line-height: 2em;
  transform: translateX(0);
  transition: transform 0.8s;
- font-family: 'Quicksand', sans-serif;
- color: #3e92cc;
+ color: #5A7A9C;
  text-shadow: 1px 1px 2px black;
 
 
@@ -18,9 +17,8 @@
    padding: 0em;
    border-radius: 3px;
    border: none;
-   font-family: 'Quicksand', sans-serif;
    font-size: xx-large;
-   color: #3e92cc;
+   color: #5A7A9C;
    font-weight: bold;
    text-shadow: 1px 1px 2px black;
 
@@ -70,12 +68,8 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1250px) {
   .text {
-    text-align: center;
-    margin-top: 8em;
-    font-size: large;
-    padding: 0 1em !important;
    
    
    
@@ -92,7 +86,107 @@
     }
    
     &--open {
-     transform: translateX(50%);
+     transform: translateX(17%);
+    }
+   
+   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .text {
+   
+   
+   
+    &-button {
+      text-align: center;
+      font-size: 1em;
+   
+   
+      
+      &:hover {
+        text-decoration: underline;
+   
+      }
+    }
+   
+    &--open {
+     transform: translateX(22%);
+    }
+   
+   }
+}
+
+@media screen and (max-width: 750px) {
+  .text {
+   
+   
+   
+    &-button {
+      text-align: center;
+      font-size: 1em;
+   
+   
+      
+      &:hover {
+        text-decoration: underline;
+   
+      }
+    }
+   
+    &--open {
+     transform: translateX(33%);
+    }
+   
+   }
+}
+
+
+@media screen and (max-width: 650px) {
+  .text {
+    margin-top: 10em;
+    transform: translateX(0%);
+
+
+    &-button {
+      text-align: center;
+      font-size: 1em;
+   
+   
+      
+      &:hover {
+        text-decoration: underline;
+   
+      }
+    }
+   
+    &--open {
+     transform: translateX(34%);
+    }
+   
+   }
+}
+
+@media screen and (max-width: 450px) {
+  .text {
+    margin-top: 6em;
+    transform: translateX(10%);
+
+
+    &-button {
+      text-align: center;
+      font-size: 1em;
+   
+   
+      
+      &:hover {
+        text-decoration: underline;
+   
+      }
+    }
+   
+    &--open {
+     transform: translateX(56%);
     }
    
    }

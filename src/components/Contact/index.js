@@ -20,8 +20,8 @@ const Contact = ({ navbarIsActive }) => (
     <div className={
         `${
           navbarIsActive
-            ? 'open'
-            : 'close'
+            ? 'openContact'
+            : 'closeContact'
         }`
       }>
       <h2 className="h2">Vous souhaitez me contacter ?</h2>
@@ -42,7 +42,8 @@ const Contact = ({ navbarIsActive }) => (
           </a>
         </li>
       </ul>
-      <p className="h2">Scannez ce QR code pour obtenir mes informations rapidement !</p>
+      <p className="h2">
+        Scannez ce QR code pour obtenir mes informations rapidement !</p>
       <img className="imageQR" src={infos} alt="QR code de contact" />
     </div>
   </div>

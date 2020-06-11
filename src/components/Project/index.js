@@ -30,13 +30,13 @@ const Project = ({
       >
         <span className="tracking-in-expand">Mes projets</span>
       </h1>
-      <div className="listNbProject">
+      <div className={`${navbarIsActive ? 'listNbProject logo--open' : 'listNbProject'}`}>
         {/* <p
           onClick={(evt) => handleClick(evt, 'Ruby')}
           className="projectRails"
         >Projets Ruby on Rails */}
-        <img src={ruby} alt="Logo ruby" className={`${navbarIsActive ? 'logo logo--open logo-ruby' : 'logo logo-ruby'}`} onClick={(evt) => handleClick(evt, 'Ruby')} />
-        <img src={js} alt="Logo js" className={`${navbarIsActive ? 'logo logo--open logo-js' : 'logo logo-js'}`} onClick={(evt) => handleClick(evt, 'JavaScript')} />
+        <img src={ruby} alt="Logo ruby" className="logo logo-ruby" onClick={(evt) => handleClick(evt, 'Ruby')} />
+        <img src={js} alt="Logo js" className="logo logo-js" onClick={(evt) => handleClick(evt, 'JavaScript')} />
         {/* </p> */}
         {/* <p onClick={(evt) => handleClick(evt, 'JavaScript')} className="projectJS">Projets Javascript</p> */}
         {/* <li>

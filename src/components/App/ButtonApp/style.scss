@@ -1,11 +1,12 @@
 .buttonApp {
-  background-color: #253237;
   border-radius: 3px;
   border: none;
   margin: 1em;
   font-weight: bold;
   font-size: 1em;
   transition: color 0.2s;
+  color: white;
+  background-color: transparent;
 
   &:hover {
     color: white;
