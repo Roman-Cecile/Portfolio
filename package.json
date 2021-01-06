@@ -49,7 +49,7 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "animate.css": "^4.1.0",
     "aos": "^2.3.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "prop-types": "*",
     "react": "*",
     "react-animate-on-scroll": "^2.1.5",
